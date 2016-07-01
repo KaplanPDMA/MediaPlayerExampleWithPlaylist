@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer;
     int[] songs = {R.raw.s1, R.raw.s2, R.raw.s3, R.raw.s4};
     String[] titles = {"Skyfall", "I want to move it2",
-            "Writing's on the wall", "Unknown"};
+            "Writing's on the wall", "Daddy by psy"};
     int songId = 0; //first song in the list
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
                     isPlaying = false;
                     buttonPlay.setText("Play");
                     mediaPlayer.stop();
-                } else {
-
                 }
 
                 songId = (songId+1) % songs.length;
